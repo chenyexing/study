@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap.css" />
+		<script src="bootstrap.js"></script>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="container>
+			<div class="row">
+				<form class="form-inline">
+  					<div class="form-group">
+    					<label for="exampleInputName2" class="sr-only">Name</label>
+    					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  					</div>
+  					<div class="form-group">
+    					<label for="exampleInputEmail2">Email</label>
+    					<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+  					</div>
+  					<button type="submit" class="btn btn-default">Send invitation</button>
+				</form>			
+			</div>
+		</div>
+		
+		<div class="checkbox">
+ 			<label>
+    			<input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+  			</label>
+		</div>
+		<div class="radio">
+  			<label>
+    			<input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+  			</label>
+		</div>
+
+
+<!--如果需要在表单中将一行纯文本和 label 元素放置于同一行，为 <p> 元素添加 .form-control-static 类即可。-->
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <p class="form-control-static">email@example.com</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+</form>	
+
+
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+
+
+
+
+<div class="form-group has-success has-feedback">
+  <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+  <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputSuccess5Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="control-label sr-only" for="inputGroupSuccess4">Input group with success</label>
+  <div class="input-group">
+    <span class="input-group-addon">@</span>
+    <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+  </div>
+  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+  <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
+</div>
+
+
+<label class="sr-only" for="inputHelpBlock">Input with help text</label>
+<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+...
+<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+
+<img src="1.jpg" class="img-thumbnail" alt="Responsive image">
+
+
+<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-success">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-info">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-warning">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+<p class="text-danger">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+
+
+<p class="bg-primary">Fusce dapibus</p>
+<p class="bg-success">Fusce dapibus</p>
+<p class="bg-info">Fusce dapibus</p>
+<p class="bg-warning">Fusce dapibus</p>
+<p class="bg-danger">Fusce dapibus</p>
+
+
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+
+	</body>
+</html>

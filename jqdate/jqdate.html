@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap-datetimepicker.css" />
+		<script src="../jquery-2.2.4.js"></script>
+		<script src="bootstrap.js"></script>
+		<script src="bootstrap-datetimepicker.js"></script>
+		<!--<script src="bootstrap-datetimepicker.zh-CN.js"></script>-->
+		<script>
+			$(function(){
+
+			
+				$(".form_datetime").datetimepicker({
+					
+					format: "dd MM yyyy",
+					autoclose:true,
+					todayBtn:true,
+					inline:true
+				})
+				
+
+			})
+			
+			
+			
+		</script>
+		<style>
+			.y-fw-n{
+  				font-weight:normal;
+			} 
+			.y-ml10{
+  				margin-left:10px;
+			}
+			.y-mr10{
+  				margin-right:10px;
+			}
+			.y-w300{
+				width: 300px;
+			}
+			.y-ml30{
+				margin-left: 30px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="form-group">
+					<input type="test" class="btn btn-sm btn-default y-w300 y-ml30 choice" value="请点击选择日期"/>
+				</div>				
+			</div>
+		</div>
+		<div class="container dateshow">
+			<div class="row">
+
+				<form class="form-inline">
+					<label class="y-fw-n y-mr10">从</label>
+					<input size="16" type="text" value="2016-06-07" readonly class="form_datetime form-control" />	
+					<label class="y-fw-n y-mr10 y-ml10">到</label>
+					<input size="16" type="text" value="2016-06-07" readonly class="form_datetime form-control" />
+				</form>				
+			</div>
+		</div>
+
+	</body>
+</html>

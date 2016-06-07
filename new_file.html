@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap 实例 - 下拉菜单（Dropdowns）</title>
+   <link href="bootstrap.css" rel="stylesheet">
+   <script src="jquery-2.2.4.js"></script>
+   <script src="bootstrap.js"></script>
+	
+	<script>
+//		$(function(){
+//			
+//			var inner = $("ul li").text();
+//			console.log(inner);
+//			$("ul li").click(function(){
+//				
+//				$("dropdownMenu1").innerHTML = "inner";
+//			})
+//			var inner = $("li").text();
+//			console.log(inner);
+//			$("li").click(function(){
+//				$("#dropdownMenu1").val().replace() = inner;
+//			})
+				
+//				var inner = $("ul li").text()
+//				$("#dropdownMenu1").innerHTML = inner
+
+			
+		})
+
+ $(function() {
+        $('.j-menu-date li').click(function() {
+			$('.j-date').text($(this).text())
+        })
+    });
+	</script>
+</head>
+<body>
+
+<div class="btn-group" role="group">
+    <button type="button" class="btn y-btn-blue" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <span class="j-date">选择日期</span><span class="caret"></span></button>
+    <ul class="dropdown-menu j-menu-date">
+        <li>今日</li>
+        <li>昨日</li>
+        <li>近7日</li>
+        <li>近30日</li>
+        <li>全部</li>
+    </ul>
+</div>
+
+
+
+<!--<div class="dropdown">
+   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+      data-toggle="dropdown">
+      .321
+      <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">1</a>
+      </li>-->
+      <!--<li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">2</a>
+      </li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">
+           3
+         </a>
+      </li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">4</a>
+      </li>
+   </ul>-->
+<!--</div>-->
+
+
+</body>
+</html>
