@@ -8,13 +8,13 @@
 		<script src="../jquery-2.2.4.js"></script>
 		<script src="bootstrap.js"></script>
 		<script src="bootstrap-datetimepicker.js"></script>
-		<!--<script src="bootstrap-datetimepicker.zh-CN.js"></script>-->
+		<script src="bootstrap-datetimepicker.zh-CN.js"></script>
 		<script>
 			$(function(){
 
 			
 				$(".form_datetime").datetimepicker({
-					
+					language:'zh-CN',
 					format: "dd MM yyyy",
 					autoclose:true,
 					todayBtn:true,
@@ -23,9 +23,7 @@
 				
 
 			})
-			
-			
-			
+						
 		</script>
 		<style>
 			.y-fw-n{
@@ -47,16 +45,14 @@
 		</style>
 	</head>
 	<body>
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
+<hr />
 		<div class="container">
 			<div class="row">
-				<div class="form-group">
-					<input type="test" class="btn btn-sm btn-default y-w300 y-ml30 choice" value="请点击选择日期"/>
-				</div>				
-			</div>
-		</div>
-		<div class="container dateshow">
-			<div class="row">
-
 				<form class="form-inline">
 					<label class="y-fw-n y-mr10">从</label>
 					<input size="16" type="text" value="2016-06-07" readonly class="form_datetime form-control" />	
