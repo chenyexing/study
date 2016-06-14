@@ -1,0 +1,61 @@
+/* Empty. Add your own CSS if you like */
+.phone-bg{
+	background: url("../img/phonebg.png");
+	background-size: cover;
+	/*background-color: chocolate;*/
+}
+
+.header{
+	margin: 150px auto 60px auto;
+	background: rgba(255,255,255,0.2);
+	box-shadow:rgba(255,255,255,0.3);
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+}
+.header img{
+
+}
+.width{
+	background: rgba(255,255,255,0.2) ;
+	box-shadow:rgba(255,255,255,0.3);
+	width: 240px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border: none;
+}
+
+.width ::-webkit-input-placeholder{
+	color:white;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.sign{
+	width: 240px;
+	height: 45px;
+	background-color: #584332;
+	border: none;
+	font-size: 16px;
+	color: white;
+	letter-spacing: 2px;
+}
+.sign-in{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.bottom a{
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0;
+	font-size: 12px;
+}
+.bottom{
+	width: 240px;
+	margin: 0 auto;
+}
+.forgot{
+	display:block;
+	float: right;
+}
+

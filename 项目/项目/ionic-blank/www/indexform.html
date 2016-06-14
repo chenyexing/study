@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="GoodCtrl">
+    <ion-header-bar class="bar-stable">
+      <button class="button button-icon ion-ios-minus-outline"
+              ng-click="toggleStatus()"></button>
+      <h1 class="title" ng-click="pullMenu()">大家好我是陈远方</h1>
+      <button class="button button-icon ion-ios-analytics"
+              ng-click="toggleOrder()"></button>
+    </ion-header-bar>
+
+    <ion-content>
+      <ion-list show-delete="showDelete" show-reorder="showReorder">
+        <ion-item class="item-divider text-center">啊哈哈哈哈，陈琪超最棒~~</ion-item>
+
+        <ion-item ng-repeat="item in data" class="item-remove-animate item-thumbnail-left">
+          <ion-delete-button class="ion-minus-circled" ng-click="onDelete(item)"></ion-delete-button>
+
+          <img ng-src="img/face/face/{{item.face}}">
+
+          <h2>{{item.label}}</h2>
+          <p>{{item.desc}}</p>
+          <ion-option-button class="button-stable" ng-click="onEdit($index)">编辑</ion-option-button>
+          <ion-option-button class="button-assertive">删除</ion-option-button>
+
+          <ion-reorder-button class="ion-navicon"
+                              on-reorder="onMoveItem(item,$fromIndex,$toIndex)">
+
+          </ion-reorder-button>
+        </ion-item>
+
+
+        <ion-item class="item-divider">我是分割线</ion-item>
+
+        <ion-item>
+          <ion-radio ng-model="choise" name="group1" ng-value="A">单选A</ion-radio>
+          <ion-radio ng-model="choise" name="group1" ng-value="B">单选B</ion-radio>
+          <ion-radio ng-model="choise" name="group1" ng-value="C">单选C</ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-radio name="group2" ng-value="D">单选D</ion-radio>
+          <ion-radio name="group2" ng-value="E">单选E</ion-radio>
+          <ion-radio name="group2" ng-value="F">单选F</ion-radio>
+        </ion-item>
+
+        <ion-item class="row-no-padding">
+          <ion-checkbox>复选A</ion-checkbox>
+          <ion-checkbox>复选B</ion-checkbox>
+          <ion-checkbox>复选C</ion-checkbox>
+        </ion-item>
+
+        <ion-item class="row-no-padding">
+          <ion-toggle>开关1</ion-toggle>
+          <ion-toggle class=" assertive-border">开关2</ion-toggle>
+          <ion-toggle class="dark-bg" toggle-class="toggle-assertive">开关3</ion-toggle>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+
+  </body>
+</html>

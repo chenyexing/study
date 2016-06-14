@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../static/js/angular.js"></script>
+	<script src="../search/conf%5B1%5D.js"></script>
+	<script>
+		var mobileApp=angular.module("mobileApp",[]);
+		mobileApp.controller("phone",["$scope",function($scope)
+		{
+			$scope.data=datas;
+
+			console.log($scope.data);
+		}]);
+		mobileApp.filter(
+				"price",function()
+				{
+					return function (input,start,end)//input 是所有数据
+					{
+						console.log(input);
+						var out=input.slice(0);  //slice 类似赋值 把input的数据赋值给out
+						var p=0;
+						for(var i=0;i<out.length;i++)
+						{
+							p=out[i].price;
+							if( p < start || p > end )
+							{
+								out.splice(i,1);//splice 移除掉 第i开始的1项
+								i=i-1;
+							}
+						}
+						return out;
+					}
+
+				}
+		)
+	</script>
+	<style>
+		.div1{
+			float: left;
+			width: 500px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body ng-app="mobileApp">
+	<div>
+		<h1>手机产品搜索</h1>
+		<hr>
+		<div>
+			<label>关键词:</label>
+			<input type="text" ng-model="keyword" placeholder="请输入关键字">
+
+			<input type="number" ng-model="min" min="0" placeholder="最小值">
+			<span>-</span>
+			<input type="number" ng-model="max" min="0" placeholder="最大值">
+		</div>
+		<div ng-controller="phone">
+			<div ng-repeat="p in data | filter:keyword | price:min:max" class="div1">
+				<p><img ng-src="../search/img/{{p.pic}}"></p>
+				<h3>{{p.name}}</h3>
+				<p>系统:{{p.system}}</p>
+				<p>产商:{{p.producer}}</p>
+				<p>价格:{{p.price | currency:"￥"}}</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

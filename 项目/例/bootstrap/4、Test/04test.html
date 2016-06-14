@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Html5 Page Useing Bootstrap Framework</title>
+	<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../static/css/04test.css" rel="stylesheet">
+	<link href="../static/css/snlib.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="../static/js/comp/html5shiv.min.js"></script>
+	<script src="../static/js/comp/respond.min.js"></script>
+	<script src="../static/js/comp/json.min.js"></script>
+	<![endif]-->
+
+	<script src="../static/js/jquery/jquery-1.12.3.min.js"></script>
+	<script src="../static/js/jquery/jquery.ext.js"></script>
+	<script src="../static/js/bootstrap/bootstrap.min.js"></script>
+	<script src="../static/js/sn-core.js"></script>
+</head>
+<script>
+	$(document ).ready(redayHandler);
+	function redayHandler(){
+		$("[data-toggle='tooltip']" ).tooltip();
+
+//
+//		$("#btnModal" ).click(function(){
+//			var em=	$("#email" ).val();
+//			var psd=$("#password" ).val();
+//			$(".bodycontent").attr("Email:"+em+"<br>"+"PassWord:"+psd);
+//		});
+
+		$.sn_message.msg("balabala~~");
+
+		$("#motai" ).click(function(){
+			var em=	$("#email" ).val();
+			var psd=$("#password" ).val();
+			$(".bodycontent").html("Email:"+em+"<br><br>"+"PassWord:"+psd);
+		});
+
+
+	}
+</script>
+<body>
+	<div id="btnModal" class="modal" role="dialog" style="z-index: 99999">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Hello</h4>
+				</div>
+				<div class="modal-body bodycontent">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default">确认</button>
+					<button type="button" class="btn btn-danger">取消</button>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!---------------------------------------------导航栏--------------------------------------------->
+	<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+		<div class="container topnav">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="navbar-header topleft">
+						<span class="topname">陳远方 <span class="topflower">✿</span></span>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<form class="navbar-form navbar-right topright" role="form">
+						<div class="form-group-md">
+							<input type="text" id="email" class="form-control" placeholder="Email">
+							<input type="password" id="password" class="form-control" placeholder="PassWord">
+							<button type="button" id="motai" class="btn btn-bgcolor" data-toggle="modal" data-target="#btnModal">Sign In</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+	</nav>
+
+
+
+		<!---------------------------------------------大图----------------------------------------------->
+		<div class="big-bg">
+			<div class="container">
+				<h1 class="world">平凡的世界</h1>
+				<p class="word">
+					生活不能等待别人来安排，要自己去争取和奋斗；<br>
+					而不论其结果是喜是悲，但可以慰藉的是，你总不枉在这世界上活了一场。<br>
+					<br>
+
+					<br>
+				其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗。<br>
+				这个意义上说，在这些平凡的世界里，也没有一天是平静的。<br>
+
+					<br>
+					<br>
+					只有努力工作，才能叫人尊重。<br>
+
+					<br><br>
+					人的一生中关键的就那么几步，<br>
+					特别是在年轻的时候。
+				</p>
+				<div class="btn-group button-group">
+					<button type="button" class="btn btn-success">Learn more >></button>
+					<button type="button" class="btn btn-default">Learn more >></button>
+					<button type="button" class="btn btn-default">Learn more >></button>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------------导航栏--------------------------------------------->
+	<div class="container">
+		<div class="green">
+			<div class="row">
+				<div class="col-md-6 ">
+					<div class="panel panel-default panel-place">
+						<div class="panel-heading ">
+							<b>Welcome My Panel</b>
+						</div>
+						<div class="panel-body">
+							<small>Twikle twikle little star , How I wonder what you are !</small>
+						</div>
+					</div>
+				</div>
+
+					<img class="img-circle img-me " src="../static/img/IMG_9127.JPG" width="220px" height="220px">
+
+			</div>
+
+
+			<!---------------------------------------------弯曲线--------------------------------------------->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="position">
+						<a href="javascript:void(0)"><span data-toggle="tooltip" title="<h2>I want to earn money<h2>" class="glyphicon glyphicon-phone phoneicon"></span></a>
+						<a href="javascript:void(0)"><span data-toggle="tooltip"  data-placement="left" title="友谊的小船说翻就翻(ˇˍˇ）" class="glyphicon glyphicon-camera cameraicon"></span></a>
+						<a href="javascript:void(0)"><span data-toggle="tooltip" title="宝宝想要去旅行♪♪♪ " class="glyphicon glyphicon-headphones headphoneicon"></span></a>
+						<a href="javascript:void(0)"><span data-toggle="tooltip" title="我想学画画✎✎✎" class="glyphicon glyphicon-cutlery cutleryicon"></span></a>
+						<a href="javascript:void(0)"><span data-toggle="tooltip" data-placement="left" title="我要学摄影ღღღ" class="glyphicon glyphicon-gift gifticon"></span></a>
+						<a href="javascript:void(0)"><span data-toggle="tooltip" data-placement="right" title="我要健身☀☀☀" class="glyphicon glyphicon-leaf leaficon"></span></a>
+						<a href="javascript:void(0)"><span data-toggle="tooltip" title="快让我皮肤变好☺☺☺" class="glyphicon glyphicon-paperclip paperclipicon"></span></a>
+					</div>
+				</div>
+				<div class="col-md-6 yl-right">
+					<div class="col-md-4">
+						<div class="border">
+							<p class="name">陳远方</p>
+							<p class="chnname">咖 啡</p>
+							<p class="engname">C A F E</p>
+						</div>
+						<div class="bgg">
+							<h4 class="bgstar">关注 <span class="star-color">❤</span></h4>
+							<p class="fans">粉丝数999</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="border">
+							<p class="name">陳也行</p>
+							<p class="chnname">起 士</p>
+							<p class="engname">C A K E</p>
+						</div>
+						<div class="bgg">
+							<h4 class="bgstar">关注 <span class="star-color">❤</span></h4>
+							<p class="fans">粉丝数998</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="border">
+							<p class="name">陳哈根</p>
+							<p class="chnname">冷 饮</p>
+							<p class="engname">D R A N K</p>
+						</div>
+						<div class="bgg">
+							<h4 class="bgstar">关注 <span class="star-color">❤</span></h4>
+							<p class="fans">粉丝数997</p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!---------------------------------------------上坡小狗-------------------------------------------->
+<hr>
+		<div class="container">
+			<div class="row lifeleft">
+				<div class="col-md-7">
+					<h2 class="word2">春风十里</h2>
+					<p class="life">
+						人的一生中关键的就那么几步，<br>
+						特别是在年轻的时候。
+					</p>
+				</div>
+				<div class="col-md-5 text-right">
+					<img class=" pgtree" src="../static/img/7.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		<!---------------------------------------------电脑块--------------------------------------------->
+	<div class="container btm">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="../static/img/8.jpg" style="width: 200px;height: 200px">
+			</div>
+			<div class="col-md-8">
+				<h2 class="word2">棒棒糖</h2>
+				<p class="life">
+					生活不能等待别人来安排，要自己去争取和奋斗；<br>
+					而不论其结果是喜是悲，但可以慰藉的是，你总不枉在这世界上活了一场。
+				</p>
+			</div>
+		</div>
+	</div>
+		<!---------------------------------------------6个图片-------------------------------------------->
+	<hr>
+	<div class="container">
+		<div class=" text-center">
+			<h3 class="feature">Feature</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+
+
+			</div>
+			<div class="col-md-8 wwww">
+				<div data-toggle="tooltip" title="Vadio" class="col-md-4 text-center">
+					<img src="../static/img/vadio.png">
+					<h4>Vadio</h4>
+					<p>Video chat with up to 10 peple</p>
+				</div>
+				<div data-toggle="tooltip" title="Screen Share" class="col-md-4 text-center" >
+					<img src="../static/img/screen-share.png">
+					<h4>Screen Share</h4>
+					<p>Get on the same page</p>
+				</div>
+				<div data-toggle="tooltip" title="Any Device" class="col-md-4 text-center" >
+					<img src="../static/img/phone.png">
+					<h4>Any Device</h4>
+					<p>Chrome,IOS and Android</p>
+				</div>
+				<div data-toggle="tooltip" title="Great Audio & Video" class="col-md-4 text-center w1" >
+					<img src="../static/img/sound.png">
+					<h4>Great Audio & Video</h4>
+					<p>You can actually hear and see each other</p>
+				</div>
+				<div data-toggle="tooltip" title="Privacy Features" class="col-md-4 text-center w1" >
+					<img src="../static/img/lock.png">
+					<h4>Privacy Features</h4>
+					<p>See who's in your meeting and keep others out</p>
+				</div>
+				<div data-toggle="tooltip" title="Easy Invites" class="col-md-4 text-center w1" >
+					<img src="../static/img/other.png">
+					<h4>Easy Invites</h4>
+					<p>Send invites to join via text,email and social media</p>
+				</div>
+
+
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+		<!---------------------------------------------底部--------------------------------------------->
+	<div class="container bigbottom">
+		<div class="row">
+			<div class="col-md-3 plant">
+				<img src="../static/img/plant.png">
+			</div>
+			<div class="col-md-6">
+				<div class="b1 text-center">
+					<button class="btn btn-group-lg but1" type="button">Sign up for beta</button>
+				</div>
+			</div>
+			<div class="col-md-4 bmtree">
+				<img src="../static/img/tree.png">
+			</div>
+		</div>
+	</div>
+		<div class="b2">
+			<div class="text-right namebot">
+				<span class="bottomname">陳远方 <span class="topflower">✿</span></span>
+			</div>
+
+
+		</div>
+
+
+
+</body>
+</html>

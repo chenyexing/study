@@ -1,0 +1,258 @@
+.topnav{
+	height: 70px;
+}
+
+.topleft{
+	line-height: 70px;
+}
+.topright{
+	padding-top: 10px;
+}
+.topname{
+	font-family: "黑体", sans-serif;
+	color: #e0e0e0;
+	font-size: 22px;
+}
+.topflower{
+	color: #ffc424;
+}
+.btn-bgcolor{
+	background-color: #ffc424;
+}
+/*------------------------------------------分割---------------------------------------------*/
+.pig{
+	width:100%;
+}
+.big-bg{
+	background:url("../img/bg.jpg");
+	width: 1400px;
+	height: 909px;
+	margin: auto;
+	margin-top:70px;
+}
+.world{
+	padding-top: 150px;
+	padding-left: 160px;
+	font-family: "黑体", sans-serif;
+}
+.word{
+	font-family: "黑体", sans-serif;
+	font-size: 22px;
+	padding-top: 20px;
+	padding-left: 160px;
+}
+.button-group{
+	padding-left: 160px;
+	padding-top: 50px;
+}
+/*------------------------------------------分割---------------------------------------------*/
+.green{
+	background: url("../img/green.png")no-repeat;
+	width: 1315px;
+	height: 966px;
+}
+.img-me{
+	margin-top:-185px;
+	margin-left: 743px;
+	border: 8px solid #d7d7d7;
+}
+.panel-place{
+	margin-top: 180px;
+}
+.border{
+	border:8px solid #ffc424;
+	width: 170px;
+	height: 110px;
+}
+.yl-right{
+	margin-top: 280px;
+	margin-left: 550px;
+}
+.name{
+	font-family: "黑体", sans-serif;
+	color: #848484;
+	font-size:18px;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-left: 10px;
+	background: gainsboro;
+	width: 70px;
+}
+.chnname{
+	font-family: "黑体", sans-serif;
+	font-size:18px;
+	text-align: center;
+	color: #585858;
+	font-weight: bold;
+}
+.engname{
+	font-family: "黑体", sans-serif;
+	font-size:16px;
+
+	text-align: center;
+	color: #585858;
+	margin-top: -8px;
+}
+.bgg{
+	width: 170px;
+	height: 60px;
+	background: #f6f6f6;
+	margin-top: -10px;
+}
+.bgstar{
+	margin-left: 10px;
+	padding-top: 10px;
+	font-family: "黑体", sans-serif;
+}
+.star-color{
+	color: hotpink;
+}
+.fans{
+	text-align: center;
+	font-family: "黑体", sans-serif;
+	margin-top: -5px;
+}
+
+.word2{
+	font-family: "黑体", sans-serif;
+	font-size:45px;
+	color: #454545;
+}
+.life{
+	font-family: "黑体", sans-serif;
+	font-size:25px;
+	color: #919191;
+	margin-top: 50px;
+}
+.lifeleft{
+	margin-top: 150px;
+}
+.pgtree{
+	width: 200px;
+	height: 260px;
+}
+
+
+
+.cat{
+	background: url("../img/7.jpg") no-repeat;
+	width: 787px;
+	height: 729px;
+}
+.btm{
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.bgvideo{
+	border:1px solid red;
+}
+
+
+
+.wwww{
+	margin-top: 150px;
+}
+.w1{
+	margin-top: 70px;
+	margin-bottom: 200px;
+}
+
+
+
+
+.bigbottom{
+	width: 100%;
+	background: url("../img/bottom.png") no-repeat ;
+}
+.plant{
+	margin-top: -90px;
+}
+.bmtree{
+	position: absolute;
+	margin-left: 1450px;
+	margin-top: -300px;
+}
+.b1{
+
+	height:321px;
+}
+.b2{
+	height: 60px;
+	margin-top: 10px;
+}
+.but1{
+	margin-top: 130px;
+	background: white;
+	width: 200px;
+	height: 50px;
+	font-family: "Arial",sans-serif;
+	font-size: 18px;
+	border:3px solid black;
+}
+.namebot{
+	padding-right: 40px;
+}
+.bottomname{
+	font-family: "黑体", sans-serif;
+	font-size: 26px;
+	color: #4d4d4d;
+}
+
+
+
+
+.feature{
+	margin-bottom: -50px;
+	margin-top: 100px;
+}
+
+.phoneicon{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 142px;
+	margin-left: 184px;
+	position: absolute;
+}
+.cameraicon{
+	font-size: 28px;
+	color: #ffffff;
+	margin-top: 113px;
+	margin-left: 334px;
+	position: absolute;
+}
+.headphoneicon{
+	font-size: 46px;
+	color: #ffffff;
+	margin-top: 240px;
+	margin-left: 290px;
+	position: absolute;
+}
+.cutleryicon{
+	font-size: 20px;
+	color: #ffffff;
+	margin-top: 340px;
+	margin-left: 184px;
+	position: absolute;
+}
+.gifticon{
+	font-size: 38px;
+	color: #ffffff;
+	margin-top: 334px;
+	margin-left: 72px;
+	position: absolute;
+}
+.leaficon{
+	font-size: 22px;
+	color: #ffffff;
+	margin-top: 480px;
+	margin-left: 180px;
+	position: absolute;
+}
+.paperclipicon{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 433px;
+	margin-left: 260px;
+	position: absolute;
+}

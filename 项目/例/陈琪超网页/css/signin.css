@@ -1,0 +1,72 @@
+body{
+    /*background:url("../images/bg.png") no-repeat;*/
+}
+.sign_mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.21);
+    z-index: 9998;
+
+}
+#sign_in{
+    position: fixed;
+    left: 50%;
+    margin-left: -203px;
+    top:50px;
+    margin-top: 164px;
+    width: 406px;
+    height: 328px;
+    background-color:white;
+    z-index: 9999;
+}
+#sign{
+    width: 326px;
+    height: 224px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+#sign_in .username,.password,.submit{
+    /*font-weight: bold;*/
+    display: block;
+    width: 315px;
+    height: 58px;
+    font-family: Arial,sans-serif;
+    margin-bottom: 28px;
+    border: 2px solid black;
+    padding-left: 10px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    outline: none;
+}
+.submit{
+    background: white;
+    width: 329px;
+    height: 58px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.word{
+    width: 315px;
+    height: 20px;
+    font-size: 6px;
+    left: 10px;
+    margin: 28px auto;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+    letter-spacing: 2px;
+
+}
+.word_1{
+    display: block;
+    float: left;
+
+}
+.word_2{
+    display: block;
+    float: right;
+}
+a{
+    text-decoration:none;
+    color: black;
+}

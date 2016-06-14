@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(readyHandler);
+        function readyHandler(){
+            $("#outer").click(function(){
+                var arr=[]
+                $(this).children().first().animate({ left: '-670px'}, 500,
+
+                        function(){
+                            var oldobj = $(this).children().first();
+                            var newobj = oldobj.clone();
+                            $(this).css("left","0px");
+                            oldobj.remove();
+                            newobj.appendTo($(this));
+                        });
+            });
+
+            $(".contant div").css('opacity','0.9');
+
+
+        }
+    </script>
+    <style>
+        * {
+            padding:0px;
+            margin:0px;
+            border:0px;
+        }
+        body {TEXT-ALIGN: center;}
+        #outer{
+            position:relative;
+            height:350px;
+            width:670px;
+            margin-left:auto;
+            margin-right:auto;
+            overflow:hidden;
+        }
+        #inner{
+            position: absolute ;
+            left:0px;
+            height:350px;
+            width:2010px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .contant{
+            position: relative ;
+            float:left;
+            width:670px;
+            height:350px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="outer" >
+    <div id="inner">
+        <div class="contant" style="background: url(images/slide2.jpg)"></div>
+        <div class="contant" style="background: url(images/slide3.jpg)"></div>
+        <div class="contant" style="background: url(images/slide4.jpg)"></div>
+    </div>
+</div>
+</body>
+</html>

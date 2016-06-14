@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    var ImageArray=new Array();
+    ImageArray[0]="images/slide2.jpg";
+    ImageArray[1]="images/slide3.jpg";
+    ImageArray[2]="images/slide4.jpg";
+    ImageArray[3]="images/slide5.jpg";
+    ImageArray[4]="images/slide6.jpg";
+    ImageArray[5]="images/slide7.jpg";
+
+    var i=0;
+    function ImageMove(){
+        if(i==5)
+        {
+            i=0;
+        }
+        i++;
+        image1.src=ImageArray[i];
+//        setTimeout("ImageMove()",2000);
+        setInterval("ImageMove()",500);
+    };
+</script>
+
+<body onload="ImageMove()">
+<img src="images/slide2.jpg" name="image1"/>
+</body>
+
+</html>

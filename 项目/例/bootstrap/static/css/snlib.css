@@ -1,0 +1,104 @@
+/* Page Message - sn_message
+----------------------------------------------------------------------------------------------------------------------*/
+#page_message {
+  display: none;
+  font-size: 16px;
+  overflow: visible;
+  text-align: center;
+  left: 0;
+  top: 0;
+  /* place over all elements, also over modals */
+  z-index: 10002;
+  width: 100%;
+  color: white;
+  padding: 10px 50px 10px 50px;
+  position: fixed;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.page_mess_error {
+  background-color: #eea1a1;
+  border-bottom: 1px solid #e27272;
+}
+.page_mess_ok {
+  background-color: #a2dcad;
+  border-bottom: 1px solid #78c788;
+}
+.page_mess_animate {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+  -webkit-background-size: 10px 10px;
+  -moz-background-size: 10px 10px;
+  -o-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-animation: animate-bg 3s linear infinite;
+  -moz-animation: animate-bg 3s linear infinite;
+  -ms-animation: animate-bg 3s linear infinite;
+  -o-animation: animate-bg 3s linear infinite;
+  animation: animate-bg 3s linear infinite;
+}
+/* Time Selecter - sn_time_selecter
+----------------------------------------------------------------------------------------------------------------------*/
+#__SN_TIME_SELECTER {
+  width: 800px;
+  display: none;
+  box-shadow: 0 1px 6px #999999;
+  -webkit-box-shadow: 0 1px 6px #999999;
+  -moz-box-shadow: 0 1px 6px #999999;
+  position: absolute;
+}
+#__SN_TIME_SELECTER > table {
+  width: 100%;
+  border-collapse: separate;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -ms-border: 1px solid #eeeeee;
+}
+#__SN_TIME_SELECTER > table > thead th {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0;
+  background: #95b3d7;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  border-right: 0;
+}
+#__SN_TIME_SELECTER > table > tbody td {
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+#__SN_TIME_SELECTER > table > tbody td:last-child {
+  border-right: 1px solid #eeeeee;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-head {
+  width: 10px;
+  height: 8px;
+  padding: 0;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-head.normal {
+  background-color: #dbe5f1;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-head.rest {
+  background-color: #dceea6;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-head.working {
+  background-color: #ccc0da;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-time {
+  width: 10px;
+  height: 20px;
+  padding: 0;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-time.normal {
+  background-color: #f9f9f9;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-time.working {
+  background-color: #c6efce;
+}
+#__SN_TIME_SELECTER > table > tbody td.slot-time.normal:hover,
+#__SN_TIME_SELECTER > table > tbody td.slot-time.working:hover {
+  background-color: #cce680;
+}

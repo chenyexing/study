@@ -1,0 +1,14 @@
+h2{
+	color: #f0d2c6;
+}
+.username,p,.password{
+	font-family: "黑体",sans-serif;
+	font-size: 18px;
+	color: #a6b8de;
+}
+#username,#password{
+	width: 300px;
+	height: 30px;
+	padding-left: 10px;
+	border:2px solid #cc939a;
+}

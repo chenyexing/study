@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Home</title>
+	<link href="login/login.css" rel="stylesheet">
+	<script src="lib/angular/1.5.4/angular.js"></script>
+	<script src="lib/angular/1.5.4/anguler-route.js"></script>
+	<script src="js/app.js"></script>
+	<script src="main/MainCtrl.js"></script>
+	<script src="login/LoginCtrl.js"></script>
+	<style>
+		ul{
+			list-style: none;
+			font-size: 20px;
+			line-height: 30px;
+		}
+		a{
+			text-decoration: none;
+			font-family: "黑体",sans-serif;
+			color: darkseagreen;
+
+		}
+	</style>
+</head>
+<body ng-app="loginApp">
+	<div>
+		<ul>
+			<li><a href="#home">主页</a></li>
+			<li><a href="#login">登录</a></li>
+		</ul>
+	</div>
+	<!--<div ng-controller="LoginCtrl" ng-include="'login/_login.html'"></div>-->
+	<div ng-view></div>
+</body>
+</html>

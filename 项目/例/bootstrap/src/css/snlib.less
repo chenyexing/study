@@ -1,0 +1,124 @@
+/* Page Message - sn_message
+----------------------------------------------------------------------------------------------------------------------*/
+#page_message {
+	display: none;
+	font-size: 16px;
+	overflow: visible;
+	text-align: center;
+	left: 0;
+	top: 0;
+	/* place over all elements, also over modals */
+	z-index: 10001;
+	width: 100%;
+	color: white;
+	padding: 10px 50px 10px 50px;
+	position: fixed;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.page_mess_error {
+	background-color: #eea1a1;
+	border-bottom: 1px solid #e27272;
+}
+
+.page_mess_ok {
+	background-color: #a2dcad;
+	border-bottom: 1px solid #78c788;
+}
+
+.page_mess_animate {
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+	-webkit-background-size: 10px 10px;
+	-moz-background-size: 10px 10px;
+	-o-background-size: 10px 10px;
+	background-size: 10px 10px;
+	-webkit-animation: animate-bg 3s linear infinite;
+	-moz-animation: animate-bg 3s linear infinite;
+	-ms-animation: animate-bg 3s linear infinite;
+	-o-animation: animate-bg 3s linear infinite;
+	animation: animate-bg 3s linear infinite;
+}
+
+/* Time Selecter - sn_time_selecter
+----------------------------------------------------------------------------------------------------------------------*/
+
+// table head background color
+@time-selecter-head-bg: #95b3d7;
+
+// slot width
+@slot-width: 10px;
+
+// slot-head background color
+@slot-head-normal-bg: #dbe5f1;
+@slot-head-rest-bg: #dceea6;
+@slot-head-working-bg: #ccc0da;
+
+// slot border
+@slot-border-color: #eeeeee;
+
+#__SN_TIME_SELECTER {
+	width: 800px;
+	display: none;
+	box-shadow: 0 1px 6px #999999;
+	-webkit-box-shadow: 0 1px 6px #999999;
+	-moz-box-shadow: 0 1px 6px #999999;
+	position: absolute;
+
+	> table {
+		width: 100%;
+		border-collapse: separate;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-ms-border: 1px solid @slot-border-color;
+
+		> thead {
+			th {
+				color: #ffffff;
+				font-size: 12px;
+				font-weight: normal;
+				padding: 0;
+				background: @time-selecter-head-bg;
+				text-align: center;
+				border: 1px solid @slot-border-color;
+				border-right: 0;
+			}
+		}
+
+		> tbody {
+			td {
+				border-left: 1px solid @slot-border-color;
+				border-bottom: 1px solid @slot-border-color;
+			}
+			td:last-child {
+				border-right: 1px solid @slot-border-color;
+			}
+
+			td.slot-head {
+				width: @slot-width;
+				height: 8px;
+				padding: 0;
+
+				&.normal { background-color: @slot-head-normal-bg; }
+				&.rest { background-color: @slot-head-rest-bg; }
+				&.working { background-color: @slot-head-working-bg; }
+			}
+
+			td.slot-time {
+				width: @slot-width;
+				height: 20px;
+				padding: 0;
+
+				&.normal { background-color: #f9f9f9; }
+				&.working { background-color: #c6efce; }
+
+				&.normal, &.working {
+					&:hover { background-color: mix(#99cc00, #ffffff); }
+				}
+			}
+		}
+	}
+}

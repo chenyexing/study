@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>	bXajI0WuKRbXrwwj04rTloO2mgqx1PUx	</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=bXajI0WuKRbXrwwj04rTloO2mgqx1PUx"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" >
+    <ion-nav-bar>
+      <!--<ion-nav-back-button class="button-icon ion-arrow-left-c">   -->
+        <!--&lt;!&ndash;后退按钮一般不需要，因为太丑&ndash;&gt;-->
+      <!--</ion-nav-back-button>-->
+    </ion-nav-bar>
+    <ion-nav-view animation="slide-left-right" class="has-header">
+    </ion-nav-view>
+    <script id="home.html" type="text/ng-template">
+      <ion-view title="哈哈">
+        <!--hide-nav-bar="true" title是给ion-nav-bar-->
+
+        <ion-nav-buttons side="left"><!--本身不是按钮 需在里面自行加按钮-->
+          <button class="button button-icon ion-ios-moon"></button>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right"><!--本身不是按钮 需在里面自行加按钮-->
+          <button class="button button-icon ion-ios-gear"></button>
+        </ion-nav-buttons>
+        <ion-content class="clam">
+             <p>How are you?</p>
+          <a href="#sub">~~n(o-o)n~~</a>
+        </ion-content>
+      </ion-view>
+    </script>
+    <script id="sub.html" type="text/ng-template">
+    <ion-view title="呵呵">
+      <ion-content id="map" class="assertive">
+        <!---->
+        <!---->
+        <!---->
+      </ion-content>
+    </ion-view>
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<ion-side-menus ng-controller="RefreshCtrl">-->
+
+
+      <!--<ion-side-menu-content>-->
+
+        <!--<ion-header-bar class="bar-dark">-->
+          <!--<a menu-toggle="left" class="button icon ion-navicon"></a>-->
+          <!--<h2 class="title">This is title bar!</h2>-->
+          <!--<a menu-toggle="right" class="button icon ion-navicon"></a>-->
+        <!--</ion-header-bar>-->
+        <!--<ion-content>-->
+          <!--<ion-refresher pulling-text="loading..." on-refresh="doRefresh()">-->
+          <!--</ion-refresher>-->
+          <!--<ion-list>-->
+            <!--<ion-item ng-repeat="item in data">-->
+              <!--编号：{{item}}-->
+            <!--</ion-item>-->
+          <!--</ion-list>-->
+        <!--</ion-content>-->
+
+      <!--</ion-side-menu-content>-->
+
+      <!--<ion-side-menu side="left" width="150" expose-aside-when="(min-width:500px)">-->
+        <!--<ion-content class="balanced-bg"></ion-content>-->
+      <!--</ion-side-menu>-->
+
+      <!--<ion-side-menu side="right" expose-aside-when="(min-width:500px)">-->
+        <!--<ion-content class="assertive-bg"></ion-content>-->
+      <!--</ion-side-menu>-->
+
+
+    <!--</ion-side-menus>-->
+
+
+
+  </body>
+</html>

@@ -1,0 +1,108 @@
+/* Empty. Add your own CSS if you like */
+
+.onepic,.twopic,.threepic{
+	height: 568px;
+	background-image: url("../img/bgg.png");
+	background-size:cover;
+	text-align: center;
+}
+.fourpic{
+	height: 568px;
+	background-image: url("../img/bg4.png");
+	background-size: 100%;
+	text-align: center;
+}
+.fourpic img{
+	margin-top: -100px;
+	margin-left: 170px;
+}
+.fourpic button{
+	width: 170px;
+	height: 40px;
+	mso-border-shadow: yes;
+	background: rgba(179,158,145,0.4);
+	border: 2px solid #a68c80;
+	font-size: 20px;
+	font-family: Arial,sans-serif;
+	margin-top: 170px;
+	color: #361408;
+}
+
+.word{
+	font-size: 24px;
+	color: #361408;
+	padding-top: 100px;
+	font-family: "黑体",sans-serif;
+}
+.onepic img,.twopic img,.threepic img{
+	margin-top: 170px;
+}
+ul li{
+	line-height: 50px;
+	font-size: 22px;
+	width: 160px;
+	text-align: left;
+	margin: auto;
+}
+/* Empty. Add your own CSS if you like */
+.phone-bg{
+	background: url("../img/phonebg.png");
+	background-size: cover;
+	/*background-color: chocolate;*/
+}
+
+.header{
+	margin: 80px auto 50px auto;
+	background: rgba(255,255,255,0.2);
+	box-shadow:rgba(255,255,255,0.3);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+.header img{
+
+}
+.width{
+	background: rgba(255,255,255,0.2) ;
+	box-shadow:rgba(255,255,255,0.3);
+	width: 210px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border: none;
+}
+
+.width ::-webkit-input-placeholder{
+	color:white;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.sign{
+	width: 210px;
+	height: 45px;
+	background-color: #584332;
+	border: none;
+	font-size: 16px;
+	color: white;
+	letter-spacing: 2px;
+}
+.sign-in{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.bottom a{
+	text-decoration: none;
+	color: white;
+	letter-spacing: 0;
+	font-size: 12px;
+}
+.bottom{
+	width: 210px;
+	margin: 0 auto;
+}
+.forgot{
+	display:block;
+	float: right;
+}
+
+
