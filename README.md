@@ -12,6 +12,7 @@ there're some frond-end technology that I should learn
 
 
 ### Tools
+- [ ] markdown
 - [ ] GIT/SVN
 - [ ] Hbuilder/webstorm/phpstorm
 - [ ] nodeJS/npmJS/fisJS/bowerJS
