@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../CSS/bootstrap.css" rel="stylesheet">
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#letter-e").click(function(){
+                $.getJSON("123.json",function(data){
+                    $("#dictionary").empty();
+                    $.each(data,function(a,entry){
+
+                            var html = '<div class="entry">';
+                            html += '<div class="text">' + entry['text'] + '</div>';
+                            html += '<div class="value">' + entry['value'] + '</div>';
+                            html += '</div>';
+                            $('#dictionary').append(html);
+
+
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="letters">
+    <div class="letter" id="letter-e">
+        <h3>E</h3>
+        <div class="button">Load</div>
+    </div>
+</div>
+<div id="dictionary">
+</div>
+</body>
+</html>
